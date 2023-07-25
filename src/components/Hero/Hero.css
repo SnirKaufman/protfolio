@@ -1,0 +1,53 @@
+.hero {
+  --secondary-color: #2d2e32;
+  display: flex;
+  justify-content: center;
+  padding-top: 12rem;
+  padding-right: 10rem;
+  gap: 10rem;
+}
+
+.hero-text-container {
+  gap: 10rem;
+  max-width: 28rem;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text-container h1 {
+  color: var(--secondary-color);
+  font-size: 3.2rem;
+}
+
+.hero-text-container p {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  font-family: "Mulish", sans-serif;
+}
+
+.hero-text-container img {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.hero-icons-container {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}
+.icons {
+  color: var(--secondary-color);
+}
+
+.location {
+  cursor: auto;
+}
+
+.icons:hover {
+  color: #147efb;
+  transition: ease-in 0.2s;
+  cursor: pointer;
+}
