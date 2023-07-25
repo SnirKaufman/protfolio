@@ -34,3 +34,6 @@
   color: #147efb;
   transition: ease-in 0.2s;
 }
+
+@media (max-width: 900px) {
+}

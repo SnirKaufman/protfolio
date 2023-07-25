@@ -4,6 +4,9 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 const TITLE = "Front-End React Developer";
 const SUBTITLE =
   "Hi, I'm Snir Kaufman. A passionate Front-end React Developer based in Israel. 📍";
+const PDF_FILE_URL = "CV.pdf";
+const LINKEDIN_PROFILE = "https://www.linkedin.com/in/snir-kaufman-5b289726b/";
+const GITHUB_PROFILE = "https://github.com/SnirKaufman?tab=repositories";
 
 const TECH_SVGS = [
   { srcName: "html.svg" },
@@ -12,7 +15,6 @@ const TECH_SVGS = [
   { srcName: "react.svg" },
   { srcName: "scss.svg" },
 ];
-
 const heroPicture = {
   backgroundImage: 'url("/public/snir.jpg")',
   backgroundSize: "cover",
@@ -30,8 +32,12 @@ function Hero() {
           </h1>
           <p className="subtitle">{SUBTITLE}</p>
           <div className="hero-svg-container">
-            <BsLinkedin size={35} className="icon" />
-            <BsGithub size={35} className="icon" />
+            <a target="_blank" href={LINKEDIN_PROFILE}>
+              <BsLinkedin size={35} className="icon" />
+            </a>
+            <a target="_blank" href={GITHUB_PROFILE}>
+              <BsGithub size={35} className="icon" />
+            </a>
           </div>
         </div>
         <div className="hero-img" style={heroPicture}></div>
@@ -48,6 +54,9 @@ function Hero() {
           })}
         </div>
       </div>
+      <a href={PDF_FILE_URL} download className="btn CV">
+        Download CV
+      </a>
     </div>
   );
 }

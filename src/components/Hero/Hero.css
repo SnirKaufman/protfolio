@@ -85,7 +85,8 @@
   background-color: white;
   border-radius: 50%;
   height: 65px;
-  padding: 15px;
+  padding: 1rem;
+  transition-duration: 0.3s;
 }
 
 .tech-single-svg {
@@ -94,6 +95,21 @@
 
 .tech-rounded:hover {
   cursor: pointer;
+  transform: scale(1.2);
+}
+
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid black;
+  color: var(--secondary-color);
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  transition-duration: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.2);
 }
 
 @keyframes morph {
