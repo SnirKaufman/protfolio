@@ -13,32 +13,36 @@ const TECH_SVGS = [
   { srcName: "scss.svg" },
 ];
 
+const heroPicture = {
+  backgroundImage: 'url("/public/snir.jpg")',
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+};
+
 function Hero() {
   return (
-    <div className="container">
-      <div className="hero">
-        <div className="hero-text-container">
-          <h1>
+    <div className="hero-section">
+      <div className="inner-container">
+        <div className="content-wrapper">
+          <h1 className="title">
             {TITLE}
             <img src="/wave.png" alt="waving_hand" className="waving-hand" />
           </h1>
-          <p>{SUBTITLE}</p>
-          <div className="hero-icons-container">
-            <BsLinkedin size={35} className="icons" />
-            <BsGithub size={35} className="icons" />
+          <p className="subtitle">{SUBTITLE}</p>
+          <div className="hero-svg-container">
+            <BsLinkedin size={35} className="icon" />
+            <BsGithub size={35} className="icon" />
           </div>
         </div>
-        <div className="hero-img">
-          <img src="/Snir.jpg" alt="snir" />
-        </div>
+        <div className="hero-img" style={heroPicture}></div>
       </div>
       <div className="tech-stack-container">
-        <div className="tech-stack">Tech Stack </div>
-        <div className="tech-stack-icons">
+        <div className="tech-stack-title">Tech Stack </div>
+        <div className="tech-stack-svg-container">
           {TECH_SVGS.map(({ srcName }) => {
             return (
               <div className="tech-rounded">
-                <img className="tech" src={srcName} />
+                <img className="tech-single-svg" src={srcName} />
               </div>
             );
           })}

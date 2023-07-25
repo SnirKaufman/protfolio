@@ -1,4 +1,4 @@
-.container {
+.hero-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +8,7 @@
   background-color: #f0f0f0;
 }
 
-.hero {
+.inner-container {
   --secondary-color: #2d2e32;
   display: flex;
   justify-content: center;
@@ -16,57 +16,51 @@
   gap: 5rem;
 }
 
-.hero-text-container {
+.content-wrapper {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   width: 28rem;
 }
 
-.hero-text-container h1 {
+.title {
   color: var(--secondary-color);
   font-size: 3.2rem;
 }
 
 .waving-hand {
   margin: 0 2rem;
+  height: 3.5rem;
+  width: 3.5rem;
 }
 
-.hero-text-container p {
+.subtitle {
   padding-top: 1rem;
   font-size: 1.2rem;
   font-family: "Mulish", sans-serif;
 }
 
-.hero-text-container img {
-  height: 3.5rem;
-  width: 3.5rem;
-}
-
-.hero-icons-container {
+.hero-svg-container {
   display: flex;
   gap: 1rem;
   padding-top: 1rem;
 }
-.icons {
+.icon {
   color: var(--secondary-color);
 }
 
-.icons:hover {
+.icon:hover {
   color: #147efb;
   transition: ease-in 0.2s;
   cursor: pointer;
 }
 
 .hero-img {
-  border: 2px solid black;
-  border-radius: 50%;
-}
-
-.hero-img img {
-  border-radius: 50%;
-  width: 20rem;
+  border: 3px solid black;
+  border-radius: 100%;
   height: 20rem;
+  width: 20rem;
+  animation: morph 8s ease-in-out infinite;
 }
 
 .tech-stack-container {
@@ -76,15 +70,15 @@
   padding-top: 5rem;
 }
 
-.tech-stack-icons {
-  display: flex;
-  gap: 4rem;
-}
-
-.tech-stack {
+.tech-stack-title {
   font-size: 1.2rem;
   padding-right: 2rem;
   border-right: 2px solid #2d2e32;
+}
+
+.tech-stack-svg-container {
+  display: flex;
+  gap: 3rem;
 }
 
 .tech-rounded {
@@ -94,10 +88,22 @@
   padding: 15px;
 }
 
-.tech {
+.tech-single-svg {
   height: 100%;
 }
 
 .tech-rounded:hover {
   cursor: pointer;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }
