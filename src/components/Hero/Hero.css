@@ -1,10 +1,18 @@
-.hero {
-  --secondary-color: #2d2e32;
-
+.container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  gap: 5rem;
+  background-color: #f0f0f0;
+}
+
+.hero {
+  --secondary-color: #2d2e32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 5rem;
 }
 
@@ -37,7 +45,7 @@
 
 .hero-icons-container {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   padding-top: 1rem;
 }
 .icons {
@@ -63,6 +71,33 @@
 
 .tech-stack-container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 5rem;
+  padding-top: 5rem;
+}
+
+.tech-stack-icons {
+  display: flex;
+  gap: 4rem;
+}
+
+.tech-stack {
+  font-size: 1.2rem;
+  padding-right: 2rem;
+  border-right: 2px solid #2d2e32;
+}
+
+.tech-rounded {
+  background-color: white;
+  border-radius: 50%;
+  height: 65px;
+  padding: 15px;
+}
+
+.tech {
+  height: 100%;
+}
+
+.tech-rounded:hover {
+  cursor: pointer;
 }

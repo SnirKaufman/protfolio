@@ -1,16 +1,11 @@
 import "./Navbar.css";
 
-const Navbar = () => {
-  interface Navbar {
-    displayName: string;
-    path: string;
-  }
-
-  const NAVBAR_SECTIONS: Navbar[] = [
-    { displayName: "Home", path: "/" },
-    { displayName: "About", path: "/about" },
-    { displayName: "Projects", path: "/projects" },
-    { displayName: "Contact", path: "/contact" },
+function Navbar() {
+  const NAVBAR_SECTIONS = [
+    { displayName: "Home", path: "#" },
+    { displayName: "About", path: "#about" },
+    { displayName: "Projects", path: "#projects" },
+    { displayName: "Contact", path: "#contact" },
   ];
 
   return (
@@ -33,6 +28,6 @@ const Navbar = () => {
       </nav>
     </>
   );
-};
+}
 
 export default Navbar;

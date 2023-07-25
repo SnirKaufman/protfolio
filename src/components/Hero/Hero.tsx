@@ -1,36 +1,51 @@
 import "./Hero.css";
-import waveHand from "../../assets/wave.png";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import snirPic from "../../assets/Snir.jpg";
 
-const Hero = () => {
+const TITLE = "Front-End React Developer";
+const SUBTITLE =
+  "Hi, I'm Snir Kaufman. A passionate Front-end React Developer based in Israel. 📍";
+
+const TECH_SVGS = [
+  { srcName: "html.svg" },
+  { srcName: "css.svg" },
+  { srcName: "javascript.svg" },
+  { srcName: "react.svg" },
+  { srcName: "scss.svg" },
+];
+
+function Hero() {
   return (
-    <>
+    <div className="container">
       <div className="hero">
         <div className="hero-text-container">
           <h1>
-            Front-End React Developer
-            <img src={waveHand} alt="waving_hand" className="waving-hand" />
+            {TITLE}
+            <img src="/wave.png" alt="waving_hand" className="waving-hand" />
           </h1>
-          <p>
-            Hi, I'm Snir Kaufman. A passionate Front-end React Developer based
-            in Israel. 📍
-          </p>
+          <p>{SUBTITLE}</p>
           <div className="hero-icons-container">
-            <BsLinkedin size={30} className="icons" />
-            <BsGithub size={30} className="icons" />
+            <BsLinkedin size={35} className="icons" />
+            <BsGithub size={35} className="icons" />
           </div>
         </div>
         <div className="hero-img">
-          <img src={snirPic} alt="snir" />
+          <img src="/Snir.jpg" alt="snir" />
         </div>
       </div>
       <div className="tech-stack-container">
-        <div className="tech-stack">Tech Stack</div>
-        <div className="tech-stack-icons"></div>
+        <div className="tech-stack">Tech Stack </div>
+        <div className="tech-stack-icons">
+          {TECH_SVGS.map(({ srcName }) => {
+            return (
+              <div className="tech-rounded">
+                <img className="tech" src={srcName} />
+              </div>
+            );
+          })}
+        </div>
       </div>
-    </>
+    </div>
   );
-};
+}
 
 export default Hero;
