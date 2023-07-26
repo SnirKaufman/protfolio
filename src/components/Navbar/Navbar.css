@@ -12,12 +12,13 @@
   width: 100%;
 }
 
-.logo-container {
+.navbar-title {
   cursor: pointer;
 }
 
-.navbar-right-side-container {
+.navbar-left-side-container {
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -35,5 +36,21 @@
   transition: ease-in 0.2s;
 }
 
+.hamburgerIcon {
+  position: absolute;
+  display: none;
+  top: 15px;
+  right: 20px;
+  height: 50px;
+  width: 30px;
+  cursor: pointer;
+}
+
 @media (max-width: 900px) {
+  .navbar-link-list {
+    display: none;
+  }
+  .hamburgerIcon {
+    display: inline-block;
+  }
 }

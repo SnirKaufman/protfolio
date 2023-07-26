@@ -1,20 +1,13 @@
+import SwipeableTemporaryDrawer from "../MuiDrawer/MuiDrawer";
 import "./Navbar.css";
+import NAVBAR_SECTIONS from "../../Utilites/data";
 
 function Navbar() {
-  const NAVBAR_SECTIONS = [
-    { displayName: "Home", path: "#" },
-    { displayName: "About", path: "#about" },
-    { displayName: "Projects", path: "#projects" },
-    { displayName: "Contact", path: "#contact" },
-  ];
-
   return (
     <>
       <nav className="navbar">
-        <div className="logo-container">
-          <h3>Snir.dev</h3>
-        </div>
-        <div className="navbar-right-side-container">
+        <div className="navbar-left-side-container">
+          <SwipeableTemporaryDrawer />
           {NAVBAR_SECTIONS.map(({ displayName, path }) => {
             return (
               <ul key={displayName}>
@@ -25,6 +18,7 @@ function Navbar() {
             );
           })}
         </div>
+        <h3 className="navbar-title">Snir.dev</h3>
       </nav>
     </>
   );
