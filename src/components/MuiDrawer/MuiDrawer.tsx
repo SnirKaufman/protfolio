@@ -1,17 +1,20 @@
 import * as React from "react";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
-import Button from "@mui/material/Button";
 import NAVBAR_SECTIONS from "../../Utilites/data";
 import "./MuiDrawer.css";
+import { RxHamburgerMenu } from "react-icons/rx";
 
-export default function SwipeableTemporaryDrawer() {
+export default function MuiDrawer() {
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
 
   return (
     <>
-      <Button onClick={() => setIsDrawerOpen(true)}>Button</Button>
+      <RxHamburgerMenu
+        className="hamburgerIcon"
+        onClick={() => setIsDrawerOpen(true)}
+      />
       <SwipeableDrawer
-        anchor="right"
+        anchor="left"
         open={isDrawerOpen}
         onClose={() => setIsDrawerOpen(false)}
         onOpen={() => setIsDrawerOpen(true)}
@@ -20,7 +23,9 @@ export default function SwipeableTemporaryDrawer() {
           return (
             <ul key={displayName}>
               <li className="navbar-link-list sidebar">
-                <a href={path}>{displayName}</a>
+                <a href={path} onClick={() => setIsDrawerOpen(false)}>
+                  {displayName}
+                </a>
               </li>
             </ul>
           );

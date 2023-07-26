@@ -1,4 +1,4 @@
-import SwipeableTemporaryDrawer from "../MuiDrawer/MuiDrawer";
+import Drawer from "../MuiDrawer/MuiDrawer";
 import "./Navbar.css";
 import NAVBAR_SECTIONS from "../../Utilites/data";
 
@@ -7,7 +7,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-left-side-container">
-          <SwipeableTemporaryDrawer />
+          <Drawer />
           {NAVBAR_SECTIONS.map(({ displayName, path }) => {
             return (
               <ul key={displayName}>
