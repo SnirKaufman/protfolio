@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
   gap: 5rem;
   background-color: #f0f0f0;
 }
@@ -11,7 +11,6 @@
 .inner-container {
   --secondary-color: #2d2e32;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 5rem;
 }
@@ -29,6 +28,8 @@
 }
 
 .waving-hand {
+  position: relative;
+  top: 0.5rem;
   margin: 0 2rem;
   height: 3.5rem;
   width: 3.5rem;
@@ -121,5 +122,69 @@
   }
   100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-section {
+    gap: 0;
+  }
+  .inner-container {
+    padding-top: 8rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .content-wrapper {
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .waving-hand {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .subtitle {
+    padding-top: 0;
+  }
+
+  .hero-svg-container {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .tech-stack-container {
+    padding-top: 0;
+    flex-direction: column;
+  }
+  .tech-stack-title {
+    font-size: 1rem;
+    padding: 0;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+  .hero-img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .tech-stack-container {
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  .tech-stack-svg-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .btn {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-section {
+    height: auto;
   }
 }
