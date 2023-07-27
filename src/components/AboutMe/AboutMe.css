@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: column;
   max-width: 35rem;
+  min-width: 18rem;
 }
 
 .text-container h3 {
@@ -32,7 +33,7 @@
 
 .text-container h4 {
   color: #2d2e32;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   margin-bottom: 1rem;
 }
@@ -40,7 +41,7 @@
 .text-container p {
   color: #767676;
   font-family: "Mulish";
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5;
 }
 
@@ -51,7 +52,11 @@
   .text-container {
     text-align: center;
   }
+}
+
+@media (max-width: 400px) {
   .about-me-pic {
-    max-width: 100%;
+    width: 50rem;
+    height: 20rem;
   }
 }

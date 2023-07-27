@@ -21,7 +21,7 @@ export default function MuiDrawer() {
       >
         {NAVBAR_SECTIONS.map(({ displayName, path }) => {
           return (
-            <ul key={displayName}>
+            <ul key={displayName} className="navbar-container">
               <li className="navbar-link-list sidebar">
                 <a href={path} onClick={() => setIsDrawerOpen(false)}>
                   {displayName}

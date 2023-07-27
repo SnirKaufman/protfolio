@@ -8,7 +8,7 @@ function AboutMe() {
 
         <div className="text-container">
           <h3>About Me</h3>
-          <h4>A dedicated Front-end Developer based in israel 📍</h4>
+          <h4>A dedicated Fullstack-end Developer based in israel 📍</h4>
           <p>
             As a passionate Fullstack Developer, I wield an impressive arsenal
             of skills, including expertise in HTML, CSS, JavaScript, React, and
