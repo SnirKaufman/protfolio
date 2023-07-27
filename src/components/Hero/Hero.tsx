@@ -1,7 +1,7 @@
 import "./Hero.css";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 
-const TITLE = "Front-End React Developer";
+const TITLE = "Fullstack React Developer";
 const SUBTITLE =
   "Hi, I'm Snir Kaufman. A passionate Front-end React Developer based in Israel. 📍";
 const PDF_FILE_URL = "CV.pdf";
