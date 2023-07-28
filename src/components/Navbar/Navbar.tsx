@@ -3,6 +3,8 @@ import "./Navbar.css";
 import NAVBAR_SECTIONS from "../../Utilites/data";
 
 function Navbar() {
+  const NAVBAR_TITLE = "Snir.dev";
+
   return (
     <>
       <nav className="navbar">
@@ -18,7 +20,7 @@ function Navbar() {
             );
           })}
         </div>
-        <h3 className="navbar-title">Snir.dev</h3>
+        <h3 className="navbar-title">{NAVBAR_TITLE}</h3>
       </nav>
     </>
   );
