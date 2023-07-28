@@ -1,6 +1,6 @@
 import * as React from "react";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
-import NAVBAR_SECTIONS from "../../Utilites/data";
+import { NAVBAR_SECTIONS } from "../../Utilites/data";
 import "./MuiDrawer.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 

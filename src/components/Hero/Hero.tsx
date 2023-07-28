@@ -1,16 +1,15 @@
 import "./Hero.css";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+import {
+  LINKEDIN_PROFILE,
+  GITHUB_PROFILE,
+  PDF_FILE_URL,
+} from "../../Utilites/data";
 
 const HERO_TITLE = "Fullstack React Developer";
 
 const HERO_SUBTITLE =
-  "Hi, I'm Snir Kaufman. A passionate Front-end React Developer based in Israel. 📍";
-
-const PDF_FILE_URL = "CV.pdf";
-
-const LINKEDIN_PROFILE = "https://www.linkedin.com/in/snir-kaufman-5b289726b/";
-
-const GITHUB_PROFILE = "https://github.com/SnirKaufman?tab=repositories";
+  "Hi, I'm Snir Kaufman. A passionate Fullstack React Developer based in Israel. 📍";
 
 const TECH_STACK_TITLE = "Tech Stack";
 
@@ -55,7 +54,7 @@ function Hero() {
         <div className="tech-stack-svg-container">
           {TECH_SVGS.map(({ srcName }) => {
             return (
-              <div className="tech-rounded">
+              <div className="tech-rounded" key={srcName}>
                 <img className="tech-single-svg" src={srcName} />
               </div>
             );

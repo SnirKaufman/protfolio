@@ -1,6 +1,6 @@
 .about-me {
   background-color: white;
-  margin: 5rem;
+  padding: 5rem;
 }
 
 .about-me-container {
@@ -8,6 +8,9 @@
   align-items: center;
   justify-content: center;
   gap: 5rem;
+}
+
+.about-me-img-container {
   height: 25rem;
 }
 

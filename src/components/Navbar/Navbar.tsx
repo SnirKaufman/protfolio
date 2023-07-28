@@ -1,6 +1,6 @@
 import Drawer from "../MuiDrawer/MuiDrawer";
 import "./Navbar.css";
-import NAVBAR_SECTIONS from "../../Utilites/data";
+import { NAVBAR_SECTIONS } from "../../Utilites/data";
 
 function Navbar() {
   const NAVBAR_TITLE = "Snir.dev";

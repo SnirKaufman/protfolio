@@ -1,0 +1,32 @@
+.projects-container {
+  background-color: #f0f0f0;
+  padding-top: 10rem;
+}
+
+.projects-wrapper {
+  margin: 0 auto;
+  max-width: 60rem;
+}
+
+.projects-title {
+  color: #147efb;
+}
+
+.projects-subtitle {
+  padding-bottom: 8rem;
+}
+
+.projects-img {
+  height: 10rem;
+  width: 10rem;
+}
+
+.projects-img img {
+  height: 100%;
+}
+
+.projects {
+  background-color: red;
+  display: flex;
+  gap: 10rem;
+}

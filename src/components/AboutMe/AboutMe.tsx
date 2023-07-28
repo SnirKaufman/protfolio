@@ -10,7 +10,13 @@ function AboutMe() {
   return (
     <div className="about-me">
       <div className="about-me-container">
-        <img src="./computer.jpg" alt="about-me-pic" className="about-me-pic" />
+        <div className="about-me-img-container">
+          <img
+            src="./computer.jpg"
+            alt="about-me-pic"
+            className="about-me-pic"
+          />
+        </div>
         <div className="text-container">
           <h3>{ABOUT_ME_TITLE}</h3>
           <h4>{ABOUT_ME_SUBTITLE}</h4>
