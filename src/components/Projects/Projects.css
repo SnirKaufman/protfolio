@@ -1,32 +1,32 @@
 .projects-container {
   background-color: #f0f0f0;
-  padding-top: 10rem;
 }
-
-.projects-wrapper {
-  margin: 0 auto;
-  max-width: 60rem;
-}
-
-.projects-title {
-  color: #147efb;
-}
-
-.projects-subtitle {
-  padding-bottom: 8rem;
-}
-
-.projects-img {
-  height: 10rem;
-  width: 10rem;
-}
-
-.projects-img img {
-  height: 100%;
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 5rem;
 }
 
 .projects {
-  background-color: red;
   display: flex;
-  gap: 10rem;
+  background-color: red;
+
+  gap: 5rem;
+  padding: 2rem;
+  border-radius: 1.7em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+  max-height: 20rem;
+}
+
+.projects-img {
+  border-radius: 1.7em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.projects-img img {
+  border-radius: 1em;
+  height: 100%;
 }

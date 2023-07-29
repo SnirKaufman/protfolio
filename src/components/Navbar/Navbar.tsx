@@ -10,11 +10,13 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-left-side-container">
           <Drawer />
-          {NAVBAR_SECTIONS.map(({ displayName, path }) => {
+          {NAVBAR_SECTIONS.map(({ displayName, path, id }) => {
             return (
-              <ul key={displayName}>
+              <ul>
                 <li className="navbar-link-list">
-                  <a href={path}>{displayName}</a>
+                  <a key={id} href={path}>
+                    {displayName}
+                  </a>
                 </li>
               </ul>
             );

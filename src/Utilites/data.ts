@@ -1,15 +1,26 @@
 export const NAVBAR_SECTIONS = [
-  { displayName: "Home", path: "#" },
-  { displayName: "About", path: "#about" },
-  { displayName: "Projects", path: "#projects" },
-  { displayName: "Contact", path: "#contact" },
+  { id: 1, displayName: "Home", path: "#" },
+  { id: 2, displayName: "About", path: "#about" },
+  { id: 3, displayName: "Projects", path: "#projects" },
+  { id: 4, displayName: "Contact", path: "#contact" },
 ];
 
 export const PROJECTS_DATA = [
   {
+    id: 1,
     image: "/meckmovies.png",
     title: "MeckMovies",
-    projectDescription: "",
+    projectDescription:
+      "lorem2dsadjsajdasjdsajkdsajkdasjdassadjsadjasdjnsadjasdjjsadjk",
+    linkToSite: "https://meck-movies.vercel.app",
+    linkToGitHubRepository: "https://github.com/SnirKaufman/MeckMovies",
+  },
+  {
+    id: 1,
+    image: "/meckmovies.png",
+    title: "MeckMovies",
+    projectDescription:
+      "lorem2dsadjsajdasjdsajkdsajkdasjdassadjsadjasdjnsadjasdjjsadjk",
     linkToSite: "https://meck-movies.vercel.app",
     linkToGitHubRepository: "https://github.com/SnirKaufman/MeckMovies",
   },

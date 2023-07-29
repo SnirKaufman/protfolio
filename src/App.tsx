@@ -9,8 +9,12 @@ function App() {
     <div className="app">
       <Navbar />
       <Hero />
-      <AboutMe />
-      <Projects />
+      <section id="about">
+        <AboutMe />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
     </div>
   );
 }
