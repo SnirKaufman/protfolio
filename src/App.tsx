@@ -8,10 +8,15 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-      <Hero />
+
+      <section id="home">
+        <Hero />
+      </section>
+
       <section id="about">
         <AboutMe />
       </section>
+
       <section id="projects">
         <Projects />
       </section>

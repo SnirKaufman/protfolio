@@ -3,6 +3,7 @@ import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import { NAVBAR_SECTIONS } from "../../Utilites/data";
 import "./MuiDrawer.css";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Link } from "react-scroll";
 
 export default function MuiDrawer() {
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
@@ -19,17 +20,22 @@ export default function MuiDrawer() {
         onClose={() => setIsDrawerOpen(false)}
         onOpen={() => setIsDrawerOpen(true)}
       >
-        {NAVBAR_SECTIONS.map(({ displayName, path }) => {
-          return (
-            <ul key={displayName} className="navbar-container">
+        <ul className="drawer-container">
+          {NAVBAR_SECTIONS.map(({ displayName, path }) => {
+            return (
               <li className="navbar-link-list sidebar">
-                <a href={path} onClick={() => setIsDrawerOpen(false)}>
+                <Link
+                  className="scroll-link"
+                  to={path}
+                  offset={-80}
+                  onClick={() => setIsDrawerOpen(false)}
+                >
                   {displayName}
-                </a>
+                </Link>
               </li>
-            </ul>
-          );
-        })}
+            );
+          })}
+        </ul>
       </SwipeableDrawer>
     </>
   );

@@ -12,13 +12,8 @@
   width: 100%;
 }
 
-.navbar-title {
-  cursor: pointer;
-}
-
-.navbar-left-side-container {
+.list-container {
   display: flex;
-  align-items: center;
   gap: 2rem;
 }
 
@@ -26,9 +21,8 @@
   list-style: none;
 }
 
-.navbar-link-list a {
-  text-decoration: none;
-  color: inherit;
+.scroll-link {
+  cursor: pointer;
 }
 
 .navbar-link-list a:hover {

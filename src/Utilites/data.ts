@@ -1,8 +1,8 @@
 export const NAVBAR_SECTIONS = [
-  { id: 1, displayName: "Home", path: "#" },
-  { id: 2, displayName: "About", path: "#about" },
-  { id: 3, displayName: "Projects", path: "#projects" },
-  { id: 4, displayName: "Contact", path: "#contact" },
+  { id: 1, displayName: "Home", path: "home" },
+  { id: 2, displayName: "About", path: "about" },
+  { id: 3, displayName: "Projects", path: "projects" },
+  { id: 4, displayName: "Contact", path: "contact" },
 ];
 
 export const PROJECTS_DATA = [
@@ -11,7 +11,7 @@ export const PROJECTS_DATA = [
     image: "/meckmovies.png",
     title: "MeckMovies",
     projectDescription:
-      "lorem2dsadjsajdasjdsajkdsajkdasjdassadjsadjasdjnsadjasdjjsadjk",
+      "A car rental website is an online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars",
     linkToSite: "https://meck-movies.vercel.app",
     linkToGitHubRepository: "https://github.com/SnirKaufman/MeckMovies",
   },
@@ -20,7 +20,7 @@ export const PROJECTS_DATA = [
     image: "/meckmovies.png",
     title: "MeckMovies",
     projectDescription:
-      "lorem2dsadjsajdasjdsajkdsajkdasjdassadjsadjasdjnsadjasdjjsadjk",
+      "A car rental website is an online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars",
     linkToSite: "https://meck-movies.vercel.app",
     linkToGitHubRepository: "https://github.com/SnirKaufman/MeckMovies",
   },

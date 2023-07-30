@@ -1,6 +1,7 @@
 import Drawer from "../MuiDrawer/MuiDrawer";
 import "./Navbar.css";
 import { NAVBAR_SECTIONS } from "../../Utilites/data";
+import { Link } from "react-scroll";
 
 function Navbar() {
   const NAVBAR_TITLE = "Snir.dev";
@@ -8,21 +9,21 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <div className="navbar-left-side-container">
+        <div>
           <Drawer />
-          {NAVBAR_SECTIONS.map(({ displayName, path, id }) => {
-            return (
-              <ul>
-                <li className="navbar-link-list">
-                  <a key={id} href={path}>
+          <ul className="list-container">
+            {NAVBAR_SECTIONS.map(({ displayName, path, id }) => {
+              return (
+                <li key={id} className="navbar-link-list">
+                  <Link className="scroll-link" offset={-80} to={path}>
                     {displayName}
-                  </a>
+                  </Link>
                 </li>
-              </ul>
-            );
-          })}
+              );
+            })}
+          </ul>
         </div>
-        <h3 className="navbar-title">{NAVBAR_TITLE}</h3>
+        <h3>{NAVBAR_TITLE}</h3>
       </nav>
     </>
   );
