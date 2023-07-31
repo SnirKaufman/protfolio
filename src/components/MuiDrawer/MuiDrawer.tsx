@@ -23,7 +23,7 @@ export default function MuiDrawer() {
         <ul className="drawer-container">
           {NAVBAR_SECTIONS.map(({ displayName, path }) => {
             return (
-              <li className="navbar-link-list sidebar">
+              <li key={displayName} className="navbar-link-list sidebar">
                 <Link
                   className="scroll-link"
                   to={path}
