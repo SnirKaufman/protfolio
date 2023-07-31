@@ -13,7 +13,6 @@ function Projects() {
       <div className="projects-wrapper">
         {PROJECTS_DATA.map(
           ({
-            id,
             image,
             title,
             projectDescription,
@@ -21,7 +20,7 @@ function Projects() {
             linkToGitHubRepository,
           }) => {
             return (
-              <div key={id} className="projects">
+              <div key={title} className="projects">
                 <div className="projects-img-container">
                   <img src={image} alt="website" className="projects-img" />
                 </div>
