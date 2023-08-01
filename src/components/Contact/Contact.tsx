@@ -31,13 +31,18 @@ function Contact() {
   const formRef: any = useRef();
 
   const sendEmail = (resetForm: () => void) => {
+    const loadingToast = toast.loading("Loading...");
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, USER_ID).then(
       () => {
-        toast.success("Email sent successfully!");
+        toast.success("Email sent successfully!", {
+          id: loadingToast,
+        });
         resetForm();
       },
       (error) => {
-        toast.error(error.text);
+        toast.error(error.text, {
+          id: loadingToast,
+        });
       }
     );
   };
@@ -114,7 +119,9 @@ function Contact() {
           </div>
         ))}
 
-        <button type="submit">Submit</button>
+        <button className="btn contact-btn" type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );

@@ -69,7 +69,7 @@
 
 .projects-links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 .projects-links a {
