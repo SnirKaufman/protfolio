@@ -183,4 +183,7 @@
   .hero-section {
     height: auto;
   }
+  .btn {
+    margin-bottom: 2rem;
+  }
 }

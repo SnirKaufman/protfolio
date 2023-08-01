@@ -55,6 +55,8 @@
 }
 
 .contact-btn {
+  border-radius: 0.2em;
+  background-color: #f0f0f0;
   margin-top: 1rem;
   transition: none;
 }
