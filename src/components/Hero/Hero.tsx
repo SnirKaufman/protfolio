@@ -21,7 +21,7 @@ const TECH_SVGS = [
   { srcName: "scss.svg" },
 ];
 const heroPictureStyle = {
-  backgroundImage: 'url("snir.jpg")',
+  backgroundImage: 'url("hero.jpg")',
   backgroundSize: "cover",
   backgroundPosition: "center",
 };
