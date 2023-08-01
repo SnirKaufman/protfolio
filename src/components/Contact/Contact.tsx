@@ -55,7 +55,7 @@ function Contact() {
         message: "",
       },
       validationSchema: contactValidationSchema,
-      onSubmit: (values, { resetForm }) => {
+      onSubmit: (_, { resetForm }) => {
         sendEmail(resetForm);
       },
     });
