@@ -31,7 +31,7 @@ function Contact() {
   const formRef: any = useRef();
 
   const sendEmail = (resetForm: () => void) => {
-    const loadingToast = toast.loading("Loading...");
+    const loadingToast = toast.loading("Sending Email...");
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, USER_ID).then(
       () => {
         toast.success("Email sent successfully!", {
