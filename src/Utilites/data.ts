@@ -10,7 +10,7 @@ export const PROJECTS_DATA = [
     image: "/meckmovies.png",
     title: "MeckMovies",
     projectDescription:
-      "A car rental website is an online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars",
+      "A dynamic movie app built with React, showcasing a vast collection of films. Users can search, filter, and discover movie details effortlessly in this immersive web experience.",
     linkToSite: "https://meck-movies.vercel.app",
     linkToGitHubRepository: "https://github.com/SnirKaufman/MeckMovies",
   },
