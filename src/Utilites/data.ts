@@ -14,6 +14,14 @@ export const PROJECTS_DATA = [
     linkToSite: "https://meck-movies.vercel.app",
     linkToGitHubRepository: "https://github.com/SnirKaufman/MeckMovies",
   },
+  {
+    image: "/public/weather-site-picture.png",
+    title: "Weather Site",
+    projectDescription:
+      "Welcome to WeatherHub, your go-to destination for accurate and real-time weather information. Whether you're planning a weekend getaway, scheduling outdoor activities, or simply staying informed about your local weather, WeatherHub has you covered.",
+    linkToSite: "https://weather-app-ruddy-xi-44.vercel.app/",
+    linkToGitHubRepository: "https://github.com/SnirKaufman/weather-app",
+  },
 ];
 
 export const PDF_FILE_URL = "CV.pdf";
