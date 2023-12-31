@@ -18,9 +18,18 @@ export const PROJECTS_DATA = [
     image: "/weather-site-picture.png",
     title: "Weather Site",
     projectDescription:
-      "Welcome to WeatherHub, your go-to destination for accurate and real-time weather information. Whether you're planning a weekend getaway, scheduling outdoor activities, or simply staying informed about your local weather, WeatherHub has you covered.",
+      "Welcome to WeatherHub, your go-to destination for accurate and real-time weather information. Whether you're planning a weekend getaway, scheduling outdoor activities, or simply staying informed about your local weather, Mecki Weather Site has you covered.",
     linkToSite: "https://weather-app-ruddy-xi-44.vercel.app/",
     linkToGitHubRepository: "https://github.com/SnirKaufman/weather-app",
+  },
+  {
+    image: "/calander.png",
+    title: "Google Calander Clone",
+    projectDescription:
+      "a powerful and intuitive calendar application designed to streamline your scheduling experience. Inspired by the efficiency of Google Calendar, this feature rich clone offers a user friendly interface for creating, managing, and sharing events effortlessly.",
+    linkToSite: "https://google-calendar-clone-sable.vercel.app/",
+    linkToGitHubRepository:
+      "https://github.com/SnirKaufman/google-calendar-clone",
   },
 ];
 
